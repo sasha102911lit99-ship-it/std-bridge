@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="touch_service_desc">STD Bridge: выполнение одиночных касаний для TEST TOUCH (только после вашего разрешения в приложении).</string>
+</resources>

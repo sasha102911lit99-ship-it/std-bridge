@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STD Bridge — захват экрана"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статус: остановлен"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tvAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Адрес: —"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Токен: —"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Качество JPEG"
+        android:layout_marginTop="12dp" />
+
+    <SeekBar
+        android:id="@+id/sbQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Частота кадров"
+        android:layout_marginTop="8dp" />
+
+    <SeekBar
+        android:id="@+id/sbFps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="7" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Старт трансляции"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Стоп"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сенсорное управление (TEST TOUCH)"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvTouch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сервис жестов: —"
+        android:layout_marginTop="4dp" />
+
+    <CheckBox
+        android:id="@+id/cbArm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Разрешаю ОДНО касание из браузера (снимается после каждого действия)"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/btnA11y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Открыть настройки спец. возможностей" />
+
+    <Button
+        android:id="@+id/btnTestTouch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Открыть экран TEST TOUCH" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Выдай разрешение на захват экрана.\n2. Открой https://IP-телефона:8443/ в браузере и прими сертификат.\n3. Подключись из вкладки «Мост» генератора."
+        android:layout_marginTop="16dp" />
+</LinearLayout>
